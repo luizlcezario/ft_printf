@@ -9,11 +9,11 @@ SRCS =	ft_printf.c				\
 		ft_check_all.c			\
 		ft_formating.c			\
 		ft_gets_s_c_p.c			\
-		ft_gets_c.c				\
 		ft_gets_i_d.c			\
 		ft_gets_u_x.c			\
 		flags_formating.c		\
 		flags_formating2.c		\
+		ft_check_errors.c		\
 		flags_pointer.c		
 
 
@@ -50,7 +50,8 @@ bonus: all
 gdb:
 	gcc -g3 -I ./headers main.c $(addprefix ./files/,$(SRCS)) -L ./libft -lft 
 
-teste:re 
+teste: 
+	make re
 	cd teste2 && sh test m
 
 teste1: update re
@@ -66,5 +67,5 @@ teste2: update re
 
 update: 
 	git pull
-
-.PHONY: all clean fclean re
+#valgrind --show-leak-kinds=all --track-origins=yes  --leak-check=full  
+.PHONY: all clean fclean re teste teste1 teste2 gdb

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: llima-ce <llima-ce@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: luizz <luizz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 10:51:38 by llima-ce          #+#    #+#             */
-/*   Updated: 2021/10/14 22:12:46 by llima-ce         ###   ########.fr       */
+/*   Updated: 2021/11/04 15:22:48 by luizz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,14 @@ typedef struct s_convert_flags {
 typedef struct s_format {
 	char			*formated_src;
 	int				len;
+	int				len_all;
 	va_list			args_c;
 	t_convert_flags	*cf_now;
 }					t_format;
 
 int			ft_printf(const char *format, ...);
 
-int			ft_vfprintf(const char *format, va_list args);
+char		*ft_vfprintf(const char *format, t_format *args);
 int			ft_check_all(char *formating, t_format *buffer);
 void		ft_formating(t_format *buffer);
 

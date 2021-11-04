@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_gets_u_x.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: llima-ce <llima-ce@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: luizz <luizz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 10:05:32 by llima-ce          #+#    #+#             */
-/*   Updated: 2021/10/20 21:09:08 by llima-ce         ###   ########.fr       */
+/*   Updated: 2021/11/04 15:50:42 by luizz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ void	ft_get_u_x(t_format *buffer, char *base)
 	min_width_flag(buffer, &len, FALSE);
 	space_flag(buffer, &len);
 	plus_flag(buffer, &len);
-	buffer->len += len;
+	buffer->len = len;
 }
