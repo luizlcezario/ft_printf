@@ -6,7 +6,7 @@
 /*   By: luizz <luizz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 18:19:52 by llima-ce          #+#    #+#             */
-/*   Updated: 2021/11/04 18:07:56 by luizz            ###   ########.fr       */
+/*   Updated: 2021/11/04 18:08:13 by luizz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	check_pointers(char *flag, t_format *buffer)
 		a++;
 	}
 	if (a == 1 || (buffer->cf_now->flag_pointer == 0 &&	
-		buffer->cf_now->conversion == 's')
+		buffer->cf_now->conversion == 's'))
 		buffer->cf_now->flag_pointer = -1;
 	return (a);
 }
