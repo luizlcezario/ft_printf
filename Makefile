@@ -50,9 +50,9 @@ bonus: all
 gdb:
 	gcc -g3 -I ./headers main.c $(addprefix ./files/,$(SRCS)) -L ./libft -lft 
 
-teste: 
+teste: update
 	make re
-	cd teste2 && sh test m
+	cd teste2 && sh test
 
 teste1: update re
 	gcc -I ./headers main.c -L . -lftprintf && ./a.out -g3

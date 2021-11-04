@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_check_all.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: llima-ce <llima-ce@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: luizz <luizz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 18:19:52 by llima-ce          #+#    #+#             */
-/*   Updated: 2021/10/20 21:11:34 by llima-ce         ###   ########.fr       */
+/*   Updated: 2021/11/04 18:03:45 by luizz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	check_pointers(char *flag, t_format *buffer)
 		buffer->cf_now->flag_pointer += flag[a] - 48;
 		a++;
 	}
-	if (a == 1)
+	if (a == 1 || buffer->cf_now->flag_pointer == 0)
 		buffer->cf_now->flag_pointer = -1;
 	return (a);
 }
