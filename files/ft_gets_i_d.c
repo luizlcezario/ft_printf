@@ -6,7 +6,7 @@
 /*   By: luizz <luizz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 13:52:11 by llima-ce          #+#    #+#             */
-/*   Updated: 2021/11/04 18:33:22 by luizz            ###   ########.fr       */
+/*   Updated: 2021/11/04 18:33:59 by luizz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_get_i_d(t_format *buffer)
 	t_bool	flag;
 
 	buffer->formated_src = ft_itoa(va_arg(buffer->args_c, int));
-	if (*buffer->formated_src = '0')
+	if (*buffer->formated_src == '0')
 	{
 		buffer->len = 0;
 		return (void);
