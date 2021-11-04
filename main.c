@@ -6,7 +6,7 @@
 /*   By: luizz <luizz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/24 13:28:39 by llima-ce          #+#    #+#             */
-/*   Updated: 2021/11/04 18:26:02 by luizz            ###   ########.fr       */
+/*   Updated: 2021/11/04 18:35:36 by luizz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ int main(void)
 	int number = 30;
 	
 	printf("TESTE STRING\033[0m\n");
-	ft_printf("%.0d", 420000);
+	ft_printf("%.0d\n", 0);
+	printf("%.0d\n", 0);
 	// ft_printf(" %.2s %.3s %.4s %.5s %.1s ", " - ", "", "4", "", "2 ");
 	// printf(" len = %d\n",printf(" %.2s %.3s %.4s %.5s %.1s ", " - ", "", "4", "", "2 "));
 	// printf(" len = %d\n",ft_printf(" %02d ",-1));
