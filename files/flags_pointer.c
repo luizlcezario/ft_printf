@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   flags_pointer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: llima-ce <llima-ce@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: luizz <luizz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 18:20:38 by llima-ce          #+#    #+#             */
-/*   Updated: 2021/10/20 21:08:38 by llima-ce         ###   ########.fr       */
+/*   Updated: 2021/11/04 18:38:36 by luizz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,10 @@ void	other_pointer(t_format *buffer, int *len)
 		free(buffer->formated_src);
 		buffer->formated_src = tmp;
 		*len = buffer->cf_now->flag_pointer;
+	}
+	if (buffer->cf_now->flag_pointer == -2)
+	{
+		
 	}
 }
 
