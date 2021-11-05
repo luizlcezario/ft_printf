@@ -49,15 +49,10 @@ re: fclean all
 
 bonus: all
 
-gdb:
+test:
 	gcc -g3 -I ./headers main.c $(addprefix ./files/,$(SRCS)) -L ./libft -lft 
-
-git: 
-	git add .
-	git commit -m final
-	git push
 
 update: 
 	git pull
 #valgrind --show-leak-kinds=all --track-origins=yes  --leak-check=full  
-.PHONY: all clean fclean re bonus gdb
+.PHONY: all clean fclean re bonus test
