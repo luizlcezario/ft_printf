@@ -6,7 +6,7 @@
 /*   By: luizz <luizz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 18:20:38 by llima-ce          #+#    #+#             */
-/*   Updated: 2021/11/04 18:38:36 by luizz            ###   ########.fr       */
+/*   Updated: 2021/11/05 15:41:22 by luizz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,15 +37,12 @@ void	other_pointer(t_format *buffer, int *len)
 		buffer->formated_src = tmp;
 		*len = buffer->cf_now->flag_pointer;
 	}
-	if (buffer->cf_now->flag_pointer == -2)
-	{
-		
-	}
 }
 
 void	pointer_flag(t_format *buffer, int *len)
 {
-	if (buffer->cf_now->flag_pointer == -1)
+	if (buffer->cf_now->flag_pointer <= -1
+		&& (*buffer->formated_src == '0' || buffer->cf_now->conversion == 's'))
 	{
 		if (buffer->formated_src[0] != 0)
 			buffer->formated_src[0] = 0;

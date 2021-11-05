@@ -5,6 +5,8 @@ CC_FLAGS = -Wall -Wextra -Werror
 LIBFT = ./libft/libft.a
 
 SRCS =	ft_printf.c				\
+		ft_vformatf.c			\
+		ft_formatf.c			\
 		struct_functions.c		\
 		ft_check_all.c			\
 		ft_formating.c			\
@@ -50,22 +52,12 @@ bonus: all
 gdb:
 	gcc -g3 -I ./headers main.c $(addprefix ./files/,$(SRCS)) -L ./libft -lft 
 
-teste: update
-	make re
-	cd teste2 && sh test
-
-teste1: update re
-	gcc -I ./headers main.c -L . -lftprintf && ./a.out -g3
-
 git: 
 	git add .
 	git commit -m final
 	git push
 
-teste2: update re
-	make dot -C ./teste
-
 update: 
 	git pull
 #valgrind --show-leak-kinds=all --track-origins=yes  --leak-check=full  
-.PHONY: all clean fclean re teste teste1 teste2 gdb
+.PHONY: all clean fclean re bonus gdb
