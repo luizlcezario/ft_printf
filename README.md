@@ -45,7 +45,7 @@ The versatility of the printf function in C represents a great exercise in progr
 
 
 
-### Conversions & Flags & Expected Order
+### :clipboard: Conversions & Flags & Expected Order
 
 | Conversion  | Description														 			| Project 		|
 |-------|-----------------------------------------------------------------------------------|---------------|
@@ -72,12 +72,12 @@ The versatility of the printf function in C represents a great exercise in progr
 |-------------|---------------------------------|---------------|---------------|---------------|
 |`%`		  | `-` , `0` , `+` ,  ...			| `10`, `5` , ... | `.`, `.10`, `.5`, ... | `c`, `d`, `i`, `s`, ... |  
 
-## Some help for those who are doing
+# Some help for those who are doing
 
 In the Picture Below you will see the campatibility of the convertion types with the flags
 <img src="./.github/compatibility.png" alt="campatibility of the flags with the conversion types" width= "800"/>
 
-## How to Teste
+# :construction_worker: How to Teste
 
 ```
 
@@ -94,3 +94,10 @@ $ make teste
 $ ./a.out
 
 ```
+
+# :bug: Issues?
+
+Please feel free **to create a new issue** with its title and description on the issues page of the [ft_printf](https://github.com/luizlcezario/ft_printf/issues) Repository. If you have already found the solution to the problem, **I would love to review your pull request**!
+
+
+Give ⭐️ if you like this project, this will help me!
