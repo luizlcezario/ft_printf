@@ -77,7 +77,7 @@ The versatility of the printf function in C represents a great exercise in progr
 In the Picture Below you will see the campatibility of the convertion types with the flags
 <img src="./.github/compatibility.png" alt="campatibility of the flags with the conversion types" width= "800"/>
 
-# :construction_worker: How to Teste
+# :construction_worker: How to Test
 
 ```
 
